@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Farming Guides - AgriHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-leaf"></i> AgriHub</a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="farming-guides.html">Farming Guides</a></li>
+                    <li class="nav-item"><a class="nav-link" href="crop-details.html">Crop Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pest-control.html">Pest Control</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-4">
+        <h1 class="mb-4"><i class="fas fa-book text-success"></i> Farming Guides</h1>
+        <p class="lead mb-5">Comprehensive collection of guides and tutorials covering various aspects of farming practices, techniques, and methodologies.</p>
+
+        <!-- Filter Buttons -->
+        <div class="mb-4">
+            <button class="btn btn-outline-success me-2" onclick="filterGuides('all')">All</button>
+            <button class="btn btn-outline-success me-2" onclick="filterGuides('soil')">Soil Management</button>
+            <button class="btn btn-outline-success me-2" onclick="filterGuides('water')">Water Management</button>
+            <button class="btn btn-outline-success me-2" onclick="filterGuides('organic')">Organic Farming</button>
+            <button class="btn btn-outline-success" onclick="filterGuides('seasonal')">Seasonal</button>
+        </div>
+
+        <!-- Guides Grid -->
+        <div class="row g-4" id="guidesContainer">
+            <!-- Guide 1 -->
+            <div class="col-md-6 guide-card" data-category="soil">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500" class="card-img-top" alt="Soil Preparation"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Soil Preparation Guide</h5>
+                        <p class="card-text">Learn how to prepare your soil for optimal crop growth. Includes testing, amendments, and tilling techniques.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">Soil Management</span>
+                            <span class="badge bg-info">Beginner Friendly</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="#" class="btn btn-success btn-sm">Read Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guide 2 -->
+            <div class="col-md-6 guide-card" data-category="water">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500" class="card-img-top" alt="Irrigation"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Irrigation Management</h5>
+                        <p class="card-text">Master the art of efficient water usage. Learn drip irrigation, sprinkler systems, and water conservation techniques.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">Water Management</span>
+                            <span class="badge bg-warning">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="#" class="btn btn-success btn-sm">Read Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guide 3 -->
+            <div class="col-md-6 guide-card" data-category="organic">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1488459716781-6c3571ba75d5?w=500" class="card-img-top" alt="Organic Farming"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Organic Farming Practices</h5>
+                        <p class="card-text">Transition to organic farming. Natural fertilizers, composting, and pest management without chemicals.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">Organic Farming</span>
+                            <span class="badge bg-warning">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="#" class="btn btn-success btn-sm">Read Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guide 4 -->
+            <div class="col-md-6 guide-card" data-category="seasonal">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd64b73?w=500" class="card-img-top" alt="Seasonal Farming"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Seasonal Farming Guide</h5>
+                        <p class="card-text">Plan your farming activities according to seasons. Crop rotation, timing, and best practices for each season.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">Seasonal</span>
+                            <span class="badge bg-info">Beginner Friendly</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="#" class="btn btn-success btn-sm">Read Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guide 5 -->
+            <div class="col-md-6 guide-card" data-category="soil">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500" class="card-img-top" alt="Composting"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Composting Techniques</h5>
+                        <p class="card-text">Create nutrient-rich compost from organic waste. Complete guide to composting methods and benefits.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">Soil Management</span>
+                            <span class="badge bg-success">Organic</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="#" class="btn btn-success btn-sm">Read Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guide 6 -->
+            <div class="col-md-6 guide-card" data-category="water">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1488459716781-6c3571ba75d5?w=500" class="card-img-top" alt="Water Conservation"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Water Conservation Methods</h5>
+                        <p class="card-text">Save water while maintaining crop productivity. Mulching, rainwater harvesting, and moisture retention techniques.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">Water Management</span>
+                            <span class="badge bg-info">Eco-Friendly</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="#" class="btn btn-success btn-sm">Read Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h5>About AgriHub</h5>
+                    <p>Your trusted source for agricultural information and expert guidance.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="farming-guides.html" class="text-white-50">Guides</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white-50 me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white-50 me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white-50 me-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2026 AgriHub. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/mdb.umd.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

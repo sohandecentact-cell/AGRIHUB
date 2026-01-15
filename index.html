@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>AgriHub - Agricultural Information Portal</title>
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-leaf"></i> AgriHub</a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="farming-guides.html">Farming Guides</a></li>
+                    <li class="nav-item"><a class="nav-link" href="crop-details.html">Crop Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pest-control.html">Pest Control</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div id="carouselExampleTouch" class="carousel slide" data-mdb-touch="false">
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselExampleTouch"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselExampleTouch"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselExampleTouch"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    <!-- Featured Sections -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Featured Resources</h2>
+        <div class="row g-4">
+            <!-- Farming Guides Card -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=400" class="card-img-top" alt="Farming Guides"/>
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-book text-success"></i> Farming Guides</h5>
+                        <p class="card-text">Step-by-step guides covering planting, irrigation, soil management, and seasonal farming practices.</p>
+                    </div>
+                    <div class="card-footer bg-white border-top">
+                        <a href="farming-guides.html" class="btn btn-success btn-sm">View Guides</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crop Details Card -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1488459716781-6c3571ba75d5?w=400" class="card-img-top" alt="Crop Details"/>
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-seedling text-success"></i> Crop Details</h5>
+                        <p class="card-text">Comprehensive information on varieties, cultivation methods, soil requirements, and harvesting techniques.</p>
+                    </div>
+                    <div class="card-footer bg-white border-top">
+                        <a href="crop-details.html" class="btn btn-success btn-sm">View Crops</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pest Control Card -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd64b73?w=400" class="card-img-top" alt="Pest Control"/>
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-bug text-success"></i> Pest Control</h5>
+                        <p class="card-text">IPM strategies, biological controls, and organic remedies for effective pest management.</p>
+                    </div>
+                    <div class="card-footer bg-white border-top">
+                        <a href="pest-control.html" class="btn btn-success btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-light py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <h3 class="text-success">50+</h3>
+                    <p>Farming Guides</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="text-success">100+</h3>
+                    <p>Crop Varieties</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="text-success">200+</h3>
+                    <p>Expert Tips</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="text-success">24/7</h3>
+                    <p>Support Available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h5>About AgriHub</h5>
+                    <p>Your trusted source for agricultural information and expert guidance.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="farming-guides.html" class="text-white-50">Guides</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white-50 me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white-50 me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white-50 me-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2026 AgriHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/mdb.umd.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Contact - AgriHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-leaf"></i> AgriHub</a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="farming-guides.html">Farming Guides</a></li>
+                    <li class="nav-item"><a class="nav-link" href="crop-details.html">Crop Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pest-control.html">Pest Control</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-4">
+        <h1 class="mb-4"><i class="fas fa-envelope text-success"></i> Contact Us</h1>
+        <p class="lead mb-5">Get in touch with our agricultural experts for personalized advice and assistance.</p>
+
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-8 mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">Send us a Message</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <form id="contactForm" onsubmit="submitForm(event)">
+                            <div class="mb-3">
+                                <label class="form-label" for="name">Full Name *</label>
+                                <input class="form-control" type="text" id="name" name="name" required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="email">Email Address *</label>
+                                <input class="form-control" type="email" id="email" name="email" required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="phone">Phone Number *</label>
+                                <input class="form-control" type="tel" id="phone" name="phone" required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="expertise">Agricultural Expertise</label>
+                                <select class="form-control" id="expertise" name="expertise">
+                                    <option value="">-- Select Area --</option>
+                                    <option value="soil">Soil Management</option>
+                                    <option value="water">Water Management</option>
+                                    <option value="crops">Crop Cultivation</option>
+                                    <option value="pest">Pest Control</option>
+                                    <option value="organic">Organic Farming</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="subject">Subject *</label>
+                                <input class="form-control" type="text" id="subject" name="subject" required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="message">Your Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="attachment">Attach Document/Image (Optional)</label>
+                                <input class="form-control" type="file" id="attachment" name="attachment" accept="image/*,.pdf,.doc,.docx" />
+                                <small class="text-muted">Max file size: 5MB</small>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="agree" name="agree" required />
+                                <label class="form-check-label" for="agree">
+                                    I agree to the terms and privacy policy
+                                </label>
+                            </div>
+
+                            <button class="btn btn-success btn-block w-100" type="submit">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-4">
+                <!-- Quick Contact -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">Quick Contact</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <p class="text-muted mb-1"><i class="fas fa-phone text-success"></i> Phone</p>
+                            <p class="fw-bold">+1 (555) 123-4567</p>
+                        </div>
+                        <div class="mb-3">
+                            <p class="text-muted mb-1"><i class="fas fa-envelope text-success"></i> Email</p>
+                            <p class="fw-bold">info@agrihub.com</p>
+                        </div>
+                        <div class="mb-3">
+                            <p class="text-muted mb-1"><i class="fas fa-map-marker-alt text-success"></i> Address</p>
+                            <p class="fw-bold">Agriculture Extension Center<br>Farm District, Agricultural Zone</p>
+                        </div>
+                        <div>
+                            <p class="text-muted mb-1"><i class="fas fa-clock text-success"></i> Working Hours</p>
+                            <p class="fw-bold">Mon - Fri: 9:00 AM - 5:00 PM<br>Sat: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agricultural Extension Services -->
+                <div class="card shadow-sm">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0">Extension Services</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success"></i> Soil Testing</li>
+                            <li class="mb-2"><i class="fas fa-check text-success"></i> Crop Consultation</li>
+                            <li class="mb-2"><i class="fas fa-check text-success"></i> Pest Management</li>
+                            <li class="mb-2"><i class="fas fa-check text-success"></i> Irrigation Design</li>
+                            <li class="mb-2"><i class="fas fa-check text-success"></i> Farm Planning</li>
+                            <li class="mb-2"><i class="fas fa-check text-success"></i> Training Programs</li>
+                            <li><i class="fas fa-check text-success"></i> Field Visit Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h5>About AgriHub</h5>
+                    <p>Your trusted source for agricultural information and expert guidance.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="farming-guides.html" class="text-white-50">Guides</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white-50 me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white-50 me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white-50 me-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2026 AgriHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/mdb.umd.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
